@@ -3,3 +3,45 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Roboto Regular", sans-serif;
+  src: url("/assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body {
+  max-width: 1920px;
+  min-width: 320px;
+  background: url("/assets/img/background-header.jpg") no-repeat;
+  background-size: 1920px 877px;
+  font-family: "Roboto Regular" sans-serif;
+}
+
+.container {
+  margin: 0 390px;
+}
+
+.header {
+  display: flex;
+  padding-top: 70px;
+}
+
+.menu {
+  display: flex;
+  justify-items: center;
+}
+
+.menu__icon {
+  width: 40px;
+  height: 29px;
+}
+
+.menu__description {
+  font-family: "Roboto Regular";
+}
+
+.logo {
+  width: 240px;
+}
