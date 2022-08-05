@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-color: #0072e1;
+  --light-color: #eef3f9;
+}
+
 .body {
   max-width: 1920px;
   min-width: 320px;
@@ -12,6 +17,7 @@
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
+  background-color: var(--light-color);
 }
 
 .container {
@@ -37,25 +43,29 @@
   height: 29px;
 }
 
+.menu__description {
+  margin-left: 10px;
+}
+
 .logo {
   width: 240px;
 }
 
 .site-description {
-  font-size: 16px;
+  font-size: 1.2em;
   line-height: 26px;
 }
 
 .contact-us {
-
   max-width: 272px;
   width: 100%;
   height: 55px;
-  background-color: #0072e1;
-  color: #eef3f9;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   font-family: 'Roboto';
   font-weight: bold;
-  letter-spacing: 0.12em;
+  font-size: 1.2em;
+  letter-spacing: 0.19em;
   border: 0;
   border-radius: 10px;
 }
