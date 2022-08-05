@@ -62,10 +62,68 @@
   height: 55px;
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 1.2em;
-  letter-spacing: 0.19em;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* preview */
+
+.preview {
+  padding-top: 20px;
+}
+
+.preview__title {
+  max-width: 600px;
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.preview__desc {
+  padding-top: 17px;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.preview__stats-container {
+  max-width: 600px;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preview__stats-item {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  max-width: 243px;
+}
+
+.stats__item-number {
+  font-size: 80px;
+  line-height: 131px;
+}
+
+.stats__item-desc {
+  font-size: 0.85em;
+  line-height: 26px;
+  padding-left: 10px;
+}
+
+.preview__cta {
+  max-width: 360px;
+  width: 100%;
+  height: 70px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.2em;
   border: 0;
   border-radius: 10px;
 }
