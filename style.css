@@ -13,7 +13,7 @@
   max-width: 1920px;
   min-width: 320px;
   background: url("/assets/img/background-header.jpg") no-repeat;
-  background-size: 1920px 877px;
+  background-size: contain;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
