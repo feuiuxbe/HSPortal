@@ -17,7 +17,7 @@
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
-  background-color: var(--light-color);
+  background-color: #ffffff;
 }
 
 .container {
@@ -148,35 +148,112 @@
   grid-template-columns: 374px 374px 374px;
   grid-template-rows: 1fr 1fr;
   gap: 10px 10px;
-  grid-template-areas: 
-  "item-1 item-2 item-3"
-  "item-1 item-4 item-4"; 
+  grid-template-areas:
+    "item-1 item-2 item-3"
+    "item-1 item-4 item-4";
 }
 
 .services__item {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   color: var(--light-color);
+  padding-bottom: 20px;
 }
 
 .services__item-1 {
   grid-area: item-1;
-  background-image: url('/assets/img/services-item-1.jpg');
+  background-image: url("/assets/img/services-item-1.jpg");
 }
 
 .services__item-2 {
   grid-area: item-2;
-  background-image: url('/assets/img/services-item-2.jpg');
+  background-image: url("/assets/img/services-item-2.jpg");
 }
 
 .services__item-3 {
   grid-area: item-3;
-  background-image: url('/assets/img/services-item-3.jpg');
+  background-image: url("/assets/img/services-item-3.jpg");
 }
 
 .services__item-4 {
-  grid-area: item-4 ;
-  background-image: url('/assets/img/services-item-4.jpg');
+  grid-area: item-4;
+  background-image: url("/assets/img/services-item-4.jpg");
 }
+
+.services__item-title {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.services__cta {
+  margin-top: 20px;
+  max-width: 320px;
+  width: 100%;
+  height: 70px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* portfolio */
+
+.portfolio {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__title {
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.portfolio__desc {
+  padding-top: 17px;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.portfolio__filter-container {
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio__filter {
+  display: flex;
+  width: 229px;
+  height: 60px;
+  border: 2px solid #F6F6F6;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__filter:hover {
+  background-color: #F6F6F6;
+  cursor: pointer;
+}
+
+.portfolio__filter_active {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.portfolio__filter_active:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+
+
+
 
